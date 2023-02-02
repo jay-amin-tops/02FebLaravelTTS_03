@@ -16,6 +16,8 @@
         <p>Earlier its called as Personal Home Page</p>
         <p>PHP code will be wrapped with &lt;?php echo "called"; ?&gt;</p>
         <p>Server Side Scripting Lang</p>
+        <p>mainly use for making web page dynamic with database connection</p>
+        <p>easily connect with multiple database and perform CRUD</p>
         <p>we use Apache as application server</p>
         <p>we use MariaDB-mysqli as Database server</p>
         <p>XAMPP is a package for Apache/MariaDB-mysqli/PHP/Perl</p>
