@@ -4,7 +4,6 @@ require_once 'header.php';
 if (isset($_COOKIE['username'])) {
     if ($_COOKIE['username'] == "TOPS" && $_COOKIE['password'] == "123") {
         header("location:userdashboard.php"); // for redition one page to other
-
     }
 }
 

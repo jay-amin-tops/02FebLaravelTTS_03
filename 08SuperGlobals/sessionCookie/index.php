@@ -4,6 +4,12 @@ include("header.php");
 
 // include("header.php")
 // include("header.php"); 
+if (isset($_REQUEST['product1'])) {
+  $_SESSION['usercart']['prod1'] = array("product_title"=>$_POST['product_title1'],"product_price"=>$_REQUEST['product_title1']);
+}
+if (isset($_REQUEST['product2'])) {
+  $_SESSION['usercart']['prod2'] = array("product_title"=>$_POST['product_title2'],"product_price"=>$_REQUEST['product_title2']);
+}
 ?>
 <style>
     body {
@@ -52,65 +58,36 @@ h3 {
 <div class="container">
   <h3>Catalog</h3>
   <div class="card-deck">
+   
     <div class="card text-center">
-      <a href="#">
-        <div class="card-header">
-          Hit!
-        </div>
         <img class="card-img-top" src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=043d89cbf03cbdbbe8ed9f9e5e44ce6f" alt="Card image">
         <div class="card-body">
           <p class="card-text text-muted">Category name</p>
           <a href="#"><h5 class="card-title">Very long item name</h5></a>
           <div class="card-footer">
             3000$
+            <form method="post">
+              <input type="text" name="product_title1" value="prod1" id="product_title1">
+              <input type="text" name="product_price1" value="7000" id="product_price1">
+              <input type="submit" name="product1" value="Add" id="product1">
+            </form>
           </div>
         </div>
-      </a>
     </div>
     <div class="card text-center">
-      <a href="#">
-        <div class="card-header">
-          Hit!
-        </div>
         <img class="card-img-top" src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=043d89cbf03cbdbbe8ed9f9e5e44ce6f" alt="Card image">
         <div class="card-body">
           <p class="card-text text-muted">Category name</p>
           <a href="#"><h5 class="card-title">Very long item name</h5></a>
           <div class="card-footer">
             3000$
+            <form method="post">
+              <input type="text" name="product_title2" value="prod1" id="product_title2">
+              <input type="text" name="product_price2" value="5000" id="product_price2">
+              <input type="submit" name="product2" value="Add" id="product1">
+            </form>
           </div>
         </div>
-      </a>
-    </div>
-    <div class="card text-center">
-      <a href="#">
-        <div class="card-header">
-          Hit!
-        </div>
-        <img class="card-img-top" src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=043d89cbf03cbdbbe8ed9f9e5e44ce6f" alt="Card image">
-        <div class="card-body">
-          <p class="card-text text-muted">Category name</p>
-          <a href="#"><h5 class="card-title">Very long item name</h5></a>
-          <div class="card-footer">
-            3000$
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="card text-center">
-      <a href="#">
-        <div class="card-header">
-          Hit!
-        </div>
-        <img class="card-img-top" src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=043d89cbf03cbdbbe8ed9f9e5e44ce6f" alt="Card image">
-        <div class="card-body">
-          <p class="card-text text-muted">Category name</p>
-          <a href="#"><h5 class="card-title">Very long item name</h5></a>
-          <div class="card-footer">
-            3000$
-          </div>
-        </div>
-      </a>
     </div>
   </div>
 </div>
