@@ -25,6 +25,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //font -->
 <script src="<?php echo $this->baseURL ?>js/jquery-1.11.1.min.js"></script>
 <script src="<?php echo $this->baseURL ?>js/bootstrap.js"></script>
+<style>
+	.loginlink{
+		padding: 15px 0 ;
+		display: inline-block;
+		font-weight: 700;
+		color: #00e58b;
+	}
+</style>
 </head>
 
 <body>
@@ -140,7 +148,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					);
 				});
 				</script>
-		<div class="col-md-4 search-agileinfo">
+		<div class="col-md-3 search-agileinfo">
 			<form action="#" method="post">
 				<input type="search" name="Search" placeholder="Search for a Product..." required="">
 				<button type="submit" class="btn btn-default search" aria-label="Left Align">
@@ -149,13 +157,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</form>
 		</div>
 		<div class="col-md-1 cart-wthree">
-			<div class="cart"> 
+			<div class="cart text-center"> 
 				<form action="#" method="post" class="last"> 
 					<input type="hidden" name="cmd" value="_cart" />
 					<input type="hidden" name="display" value="1" />
 					<button class="w3view-cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
 				</form>  
 			</div>
+		</div>
+		<div class="col-md-1">
+			<a class="loginlink" href="login">Signin</a>
 		</div>
 		<div class="clearfix"></div>
 	</div>
