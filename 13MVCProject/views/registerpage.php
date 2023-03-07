@@ -5,17 +5,22 @@
 			<form method="post">
 				<div class="key">
 					<i class="fa fa-envelope" aria-hidden="true"></i>
-					<input type="text" name="Email" required="" placeholder="Email" />
+					<input type="text" name="username" required="" placeholder="Email" />
 					<div class="clearfix"></div>
 				</div>
 				<div class="key">
 					<i class="fa fa-lock" aria-hidden="true"></i>
-					<input type="password" name="Password" required="" placeholder="Password" />
+					<input type="password" name="password" required="" placeholder="Password" />
 					<div class="clearfix"></div>
 				</div>
                 <div class="key">
 					<i class="fa fa-phone" aria-hidden="true"></i>
 					<input type="text" name="mobile" required="" placeholder="Mobile" />
+					<div class="clearfix"></div>
+				</div>
+                <div class="key">
+					<i class="fa fa-envelope" aria-hidden="true"></i>
+					<input type="text" name="email" required="" placeholder="Email" />
 					<div class="clearfix"></div>
 				</div>
                 <div class="key1">
@@ -24,7 +29,7 @@
 					<div class="clearfix"></div>
 				</div>
                 <br>
-				<input type="submit" value="Register" />
+				<input type="submit" name="Register" value="Register" />
 			</form>
 		</div>
 	</div>
